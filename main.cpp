@@ -74,7 +74,7 @@ int main() {
                 if (ev.type == 1 && ev.value != 2) {
                     // Do note that keys have to be converted from key maps to characters if needed.
                     // This varies by keyboard. Generally, 1 is Escape key, 2 is 1 key, etc...
-                    // "dumpkeys" or "xmodpak" commands can be used to get the key maps of chars.
+                    // "dumpkeys" or "xmodmap" commands can be used to get the key maps of chars.
                     std::cout << poll_fd[i].fd << " " << ev.code << " " << ev.value << std::endl;
                 }
             }
